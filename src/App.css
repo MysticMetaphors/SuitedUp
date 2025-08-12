@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+@theme {
+    --color-primaryBlack-1000: #020202;
+    --color-primaryYellow-1000: #E8C068;
+    --color-primaryDarkYellow-1000: #D19C46;
+    --color-primaryGrey-1000: #81827E;
+}
+
+body {
+    color: white;
+    /* background: radial-gradient(circle at center, #E8C068 0%, #020202 70%); */
+}
