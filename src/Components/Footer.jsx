@@ -24,7 +24,7 @@ export default function Footer() {
                     <div class="md:flex md:justify-between">
                         <div class="mb-6 md:mb-0">
                             <a href="#" class="flex items-center">
-                                <img src="./Blue and Black Modern Gradient Software Development Technology Logo (3).png" class="mr-3 h-8" alt="FlowBite Logo" />
+                                <img src="./Blue and Black Modern Gradient Software Development Technology Logo (3).png" class="mr-3 h-10" alt="FlowBite Logo" />
                                 <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
                             </a>
                         </div>
@@ -64,7 +64,7 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
+                    <hr class="my-6 border-primaryYellow-1000 sm:mx-auto lg:my-8" />
                     <div class="sm:flex sm:items-center sm:justify-between">
                         <span class="text-sm text-gray-500 sm:text-center">© 2025 <a href="#" class="hover:underline">SuitedUp™</a>. All Rights Reserved.</span>
                         <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
