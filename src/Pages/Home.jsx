@@ -2,16 +2,40 @@ import { useEffect } from "react";
 import SuitedButton from "../Components/SuitedComps/SuitedButton"
 
 export default function Home() {
-     useEffect(() => {
+    useEffect(() => {
         const timerId = setTimeout(() => {
             const toast = document.getElementById('toast-warning')
             toast.classList.add('hidden')
-        }, 4000); 
+        }, 4000);
 
-        
+
         return () => clearTimeout(timerId);
-      }, []); 
+    }, []);
 
+    useEffect(() => {
+        const elements = document.querySelectorAll('.hidden-up');
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    const el = entry.target;
+                    if (entry.isIntersecting && el.classList.contains('hidden-up')) {
+                        el.classList.add('reveal-up');
+                        observer.unobserve(el);
+                    }
+                });
+            },
+            {
+                threshold: 0.1
+            }
+        );
+
+        elements.forEach(el => observer.observe(el));
+
+        return () => {
+            elements.forEach(el => observer.unobserve(el));
+            observer.disconnect();
+        };
+    }, []);
 
     return (
         <>
@@ -19,7 +43,7 @@ export default function Home() {
                 {/* HERO SECTION */}
                 <div className="mt-20 text-center">
                     <h1
-                        className="mb-4 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight"
+                        className="hidden-up mb-4 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-none tracking-tight"
                         style={{
                             backgroundImage:
                                 'repeating-linear-gradient(to right, #E8C068 30%, #D19C46 25%, #E8C068 50%, #D19C46 75%)'
@@ -27,17 +51,17 @@ export default function Home() {
                     >
                         The Menswear Label Setting Gold Standard For Timeless Tuxedos
                     </h1>
-                    <p className="mb-6 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-normal text-primaryGrey-1000">
+                    <p className="hidden-up mb-6 max-w-3xl mx-auto text-base sm:text-lg md:text-xl font-normal text-primaryGrey-1000">
                         Designed for life’s defining moments, our tuxedos combine masterful tailoring, premium fabrics, and modern sophistication to ensure you stand apart in every room.
                     </p>
-                    <div className="flex flex-wrap justify-center gap-3">
+                    <div className="hidden-up flex flex-wrap justify-center gap-3">
                         <SuitedButton text="Buy Item" icon="shopping_bag" />
                         <SuitedButton text="Rent Item" theme="secondary" />
                     </div>
                 </div>
 
                 {/* FEATURE BOXES */}
-                <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="hidden-up mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <a
                         href="#"
                         className="p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
@@ -47,17 +71,17 @@ export default function Home() {
                                 className="material-symbols-rounded text-white"
                                 style={{ fontSize: '40px' }}
                             >
-                                straighten
+                                design_services
                             </span>
-                            <h5 className="text-lg font-bold text-white">Virtual Fitting  & AI Size Recommendation</h5>
+                            <h5 className="text-lg font-bold text-white">Virtual Fitting</h5>
                         </div>
                         <p className="mt-2 text-sm text-white">
-                            Reduces fitting errors, saves time, and builds confidence for online orders. Could integrate a 3D preview showing how the tux fits on your body type.
+                            Reduces fitting errors, saves time, and builds confidence for online orders.
                         </p>
                     </a>
                     <a
                         href="#"
-                        className="p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
@@ -74,14 +98,15 @@ export default function Home() {
                     </a>
                     <a
                         href="#"
-                        className="p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
                                 className="material-symbols-rounded text-white"
                                 style={{ fontSize: '40px' }}
                             >
-                                local_shipping
+                                {/* local_shipping */}
+                                delivery_truck_speed
                             </span>
                             <h5 className="text-lg font-bold text-white">Concierge Delivery & On-Site Fitting</h5>
                         </div>
@@ -91,14 +116,14 @@ export default function Home() {
                     </a>
                     <a
                         href="#"
-                        className="p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
                                 className="material-symbols-rounded text-white"
                                 style={{ fontSize: '40px' }}
                             >
-                                groups
+                                group_work
                             </span>
                             <h5 className="text-lg font-bold text-white">Event Group Coordination</h5>
                         </div>
@@ -110,7 +135,7 @@ export default function Home() {
 
                 {/* IMAGE + TEXT SECTIONS */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center mt-20 gap-8">
-                    <div className="w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg')" }}></div>
+                    <div className=" w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg')" }}></div>
                     <div className="p-6">
                         <p className="mb-4 text-base sm:text-lg text-primaryGrey-1000">Lorem ipsum</p>
                         <h1
@@ -178,46 +203,46 @@ export default function Home() {
         </div> */}
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         <div className="grid gap-4">
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" />
                             </div>
                         </div>
                         <div className="grid gap-4">
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" />
                             </div>
                         </div>
                         <div className="grid gap-4">
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
                             </div>
                         </div>
                         <div className="grid gap-4">
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
                             </div>
-                            <div>
+                            <div className="hidden-up">
                                 <img className="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="" />
                             </div>
                         </div>

@@ -19,13 +19,13 @@ export default function Footer() {
                     </li>
                 </ul>
             </footer> */}
-            <footer class="p-4 bg-white sm:p-6">
+            <footer class="p-4 bg-transparent-100 sm:p-6">
                 <div class="mx-auto max-w-screen-xl">
                     <div class="md:flex md:justify-between">
                         <div class="mb-6 md:mb-0">
                             <a href="#" class="flex items-center">
                                 <img src="./Blue and Black Modern Gradient Software Development Technology Logo (3).png" class="mr-3 h-10" alt="FlowBite Logo" />
-                                <span class="self-center text-2xl font-semibold whitespace-nowrap">Flowbite</span>
+                                <span class="self-center text-2xl font-semibold whitespace-nowrap"></span>
                             </a>
                         </div>
                         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
