@@ -39,7 +39,7 @@ export default function Home() {
 
     return (
         <>
-            <div className="w-full h-full px-4 sm:px-6 lg:px-12">
+            <div className="w-full h-full px-4 sm:px-6 lg:px-12 overflow-hidden">
                 {/* HERO SECTION */}
                 <div className="mt-20 text-center">
                     <h1

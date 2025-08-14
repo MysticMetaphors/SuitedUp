@@ -25,8 +25,8 @@ export default function FloatingBg({
             circle.style.width = `${size}px`;
             circle.style.height = `${size}px`;
 
-            circle.style.top = `${Math.random() * 100}%`;
-            circle.style.left = `${Math.random() * 100}%`;
+            circle.style.top = `${Math.random() * 80}%`;
+            circle.style.left = `${Math.random() * 80}%`;
 
             const color = colors[Math.floor(Math.random() * colors.length)];
             circle.style.background = `radial-gradient(circle at center, ${color[0]}, transparent 70%)`;

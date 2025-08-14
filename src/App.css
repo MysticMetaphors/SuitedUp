@@ -28,13 +28,16 @@
 }
 
 html, body {
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#root {
+        overflow: hidden;
 }
 
 .floating-bg {
     inset: 0;
     z-index: -1;
-    overflow: hidden;
     clip-path: inset(0 0 0 0); 
 }
 
