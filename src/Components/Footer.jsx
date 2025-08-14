@@ -30,13 +30,22 @@ export default function Footer() {
                         </div>
                         <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                             <div>
-                                <h2 class="mb-6 text-sm font-semibold text-primaryDarkYellow-1000 uppercase">Resources</h2>
+                                <h2 class="mb-6 text-sm font-semibold text-primaryDarkYellow-1000 uppercase">QUICK LINKS</h2>
                                 <ul class="text-primaryGrey-1000">
                                     <li class="mb-4">
-                                        <a href="#" class="hover:underline">Flowbite</a>
+                                        <a href="#" class="hover:underline">Home</a>
                                     </li>
-                                    <li>
-                                        <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                                    <li class="mb-4">
+                                        <a href="#" class="hover:underline">Shop</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="hover:underline">Styles</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="hover:underline">Men's Ware</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="hover:underline">Women's Ware</a>
                                     </li>
                                 </ul>
                             </div>
@@ -44,10 +53,16 @@ export default function Footer() {
                                 <h2 class="mb-6 text-sm font-semibold text-primaryDarkYellow-1000 uppercase">Follow us</h2>
                                 <ul class="text-primaryGrey-1000">
                                     <li class="mb-4">
-                                        <a href="https://github.com/themesberg/flowbite" class="hover:underline">Github</a>
+                                        <a href="" class="hover:underline">Socials 1</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="" class="hover:underline">Socials 2</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="" class="hover:underline">Socials 3</a>
                                     </li>
                                     <li>
-                                        <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                                        <a href="" class="hover:underline">Socials 4</a>
                                     </li>
                                 </ul>
                             </div>
@@ -57,8 +72,11 @@ export default function Footer() {
                                     <li class="mb-4">
                                         <a href="#" class="hover:underline">Privacy Policy</a>
                                     </li>
-                                    <li>
+                                    <li class="mb-4">
                                         <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="hover:underline">Contact</a>
                                     </li>
                                 </ul>
                             </div>

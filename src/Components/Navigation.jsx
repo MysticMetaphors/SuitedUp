@@ -1,4 +1,6 @@
-import SuitedButton from "./SuitedComps/SuitedButton"
+// import SuitedButton from "./SuitedComps/SuitedButton"
+
+import { Link } from "react-router-dom";
 
 export default function Navigation() {
     return (
@@ -44,22 +46,22 @@ export default function Navigation() {
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">
                         <ul className="flex flex-col p-4 md:p-0 mt-4 border border-gray-700 rounded-lg bg-transparent-100 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                             <li>
-                                <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300" aria-current="page">Home</a>
+                                <Link className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300" to={'/'}>Home</Link>
                             </li>
                             <li>
-                                <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">About</a>
+                                <Link className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300" to={'/shop'}>Shop</Link>
                             </li>
-                            <li>
-                                <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">Shop</a>
-                            </li>
-                            <li>
+                            {/* <li>
                                 <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">Styles</a>
-                            </li>
+                            </li> */}
                             <li>
                                 <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">Services</a>
                             </li>
                             <li>
                                 <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">Contact</a>
+                            </li>
+                            <li>
+                                <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">About</a>
                             </li>
                         </ul>
                     </div>

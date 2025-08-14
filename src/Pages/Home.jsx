@@ -135,9 +135,9 @@ export default function Home() {
 
                 {/* IMAGE + TEXT SECTIONS */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center mt-20 gap-8">
-                    <div className=" w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg')" }}></div>
-                    <div className="p-6">
-                        <p className="mb-4 text-base sm:text-lg text-primaryGrey-1000">Lorem ipsum</p>
+                    <div className="w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg')" }}></div>
+                    <div className="p-6 order-2 md:order-1">
+                        <p className="mb-4 text-base sm:text-lg text-primaryGrey-1000">Gentlemen’s Collection</p>
                         <h1
                             className="mb-4 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl font-extrabold leading-none tracking-tight"
                             style={{
@@ -145,19 +145,22 @@ export default function Home() {
                                     'repeating-linear-gradient(to right, #E8C068 30%, #D19C46 25%, #E8C068 50%, #D19C46 75%)'
                             }}
                         >
-                            Header
+                            Refined Style
                         </h1>
                         <p className="mb-6 text-base sm:text-lg text-primaryGrey-1000 text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, recusandae totam! Nobis dolor rem praesentium error itaque eveniet labore blanditiis odit dignissimos repellat! Nobis vero adipisci necessitatibus, nemo officia aliquid.
+                            Elevate your style with our exclusive men’s collection — where timeless elegance meets
+                            modern comfort. Each piece is thoughtfully designed with premium fabrics and a perfect
+                            fit, ensuring you stand out on every occasion, whether it’s a business meeting or a casual
+                            weekend getaway.
                         </p>
-                        <SuitedButton text="Redirect Button" />
+                        <SuitedButton text="Explore Collection" />
                     </div>
                 </div>
 
                 {/* REVERSED IMAGE + TEXT SECTION */}
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center mt-20 gap-8">
-                    <div className="p-6 order-2 md:order-1">
-                        <p className="mb-4 text-base sm:text-lg text-primaryGrey-1000">Lorem ipsum</p>
+                    <div className="p-6">
+                        <p className="mb-4 text-base sm:text-lg text-primaryGrey-1000">Elegance Redefined</p>
                         <h1
                             className="mb-4 bg-clip-text text-transparent text-3xl sm:text-4xl md:text-5xl font-extrabold leading-none tracking-tight"
                             style={{
@@ -165,15 +168,18 @@ export default function Home() {
                                     'repeating-linear-gradient(to right, #E8C068 30%, #D19C46 25%, #E8C068 50%, #D19C46 75%)'
                             }}
                         >
-                            Header
+                            Timeless Grace
                         </h1>
                         <p className="mb-6 text-base sm:text-lg text-primaryGrey-1000 text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, recusandae totam! Nobis dolor rem praesentium error itaque eveniet labore blanditiis odit dignissimos repellat! Nobis vero adipisci necessitatibus, nemo officia aliquid.
+                            Embrace sophistication with our women’s collection — a harmonious blend of refined design,
+                            luxurious fabrics, and effortless comfort. From evening elegance to everyday chic, each
+                            piece is tailored to celebrate the beauty and confidence of the modern woman.
                         </p>
-                        <SuitedButton text="Redirect Button" />
+                        <SuitedButton text="Discover Collection" />
                     </div>
-                    <div className="w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center order-1 md:order-2" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg')" }}></div>
+                    <div className="w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg')" }}></div>
                 </div>
+
 
                 {/* FEATURED PRODUCTS */}
                 <div className="mt-20">
