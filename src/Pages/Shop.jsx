@@ -5,7 +5,7 @@ export default function Shop() {
     return (
         <>
             <div className="w-full h-full px-4 sm:px-6 lg:px-12">
-                <div className="flex justify-between flex-wrap">
+                <div className="flex justify-between flex-wrap my-5">
                     <Breadcrumb />
                     <SuitedDropdown setClass="self-end"/>
                 </div>
