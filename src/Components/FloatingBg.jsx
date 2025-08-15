@@ -25,9 +25,6 @@ export default function FloatingBg({
             circle.style.width = `${size}px`;
             circle.style.height = `${size}px`;
 
-            circle.style.top = `${Math.random() * 60}%`;
-            circle.style.left = `${Math.random() * 60}%`;
-
             const color = colors[Math.floor(Math.random() * colors.length)];
             circle.style.background = `radial-gradient(circle at center, ${color[0]}, transparent 70%)`;
 
@@ -36,8 +33,13 @@ export default function FloatingBg({
             circle.style.left = `${Math.random() * maxLeft}px`;
             circle.style.top = `${Math.random() * maxTop}px`;
 
-            const tx = `${Math.random() * 400 - 200}px`;
-            const ty = `${Math.random() * 400 - 200}px`;
+            circle.style.left = `${Math.random() * maxLeft}px`;
+            circle.style.top = `${Math.random() * maxTop}px`;
+
+            const maxMoveX = Math.min(containerWidth / 2 - size / 2, 200);
+            const maxMoveY = Math.min(containerHeight / 2 - size / 2, 200);
+            const tx = `${Math.random() * (maxMoveX * 2) - maxMoveX}px`;
+            const ty = `${Math.random() * (maxMoveY * 2) - maxMoveY}px`;
             circle.style.setProperty("--tx", tx);
             circle.style.setProperty("--ty", ty);
 
