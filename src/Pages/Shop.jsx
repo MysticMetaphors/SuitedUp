@@ -1,5 +1,4 @@
 import Breadcrumb from "../Components/Breadcrumb";
-import SuitedButton from "../Components/SuitedComps/SuitedButton";
 import SuitedDropdown from "../Components/SuitedComps/SuitedDropdown";
 
 export default function Shop() {
@@ -19,7 +18,6 @@ export default function Shop() {
                             <div className="p-5">
                                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900">Business Tuxedo</h5>
                                 <p className="mb-3 font-normal text-gray-700">Buy: $499 | Rent: $299</p>
-                                {/* <SuitedButton text={'Button'} /> */}
                             </div>
                         </div>
                     ))}
