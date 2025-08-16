@@ -30,7 +30,7 @@ export default function Breadcrumb() {
                                 Home
                             </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <div className="flex items-center">
                                 <svg
                                     className="rtl:rotate-180 w-3 h-3 text-primaryGrey-1000 mx-1"
@@ -54,7 +54,7 @@ export default function Breadcrumb() {
                                     Shop
                                 </a>
                             </div>
-                        </li>
+                        </li> */}
                         <li aria-current="page">
                             <div className="flex items-center">
                                 <svg

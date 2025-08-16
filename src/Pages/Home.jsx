@@ -153,7 +153,7 @@ export default function Home() {
                             fit, ensuring you stand out on every occasion, whether it’s a business meeting or a casual
                             weekend getaway.
                         </p>
-                        <SuitedButton text="Explore Collection" />
+                        <SuitedButton text="Gentelemen's Collection" />
                     </div>
                 </div>
 
@@ -175,7 +175,7 @@ export default function Home() {
                             luxurious fabrics, and effortless comfort. From evening elegance to everyday chic, each
                             piece is tailored to celebrate the beauty and confidence of the modern woman.
                         </p>
-                        <SuitedButton text="Discover Collection" />
+                        <SuitedButton text="Ladies's Collection" />
                     </div>
                     <div className="w-full h-64 sm:h-80 lg:h-[500px] rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg')" }}></div>
                 </div>
