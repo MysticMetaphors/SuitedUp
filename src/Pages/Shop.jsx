@@ -13,7 +13,7 @@ export default function Shop() {
                 </div>
                 <div className="flex flex-wrap justify-left gap-4 px-4 sm:px-6 lg:px-12 mb-10">
                     {Array.from({ length: 20 }, (_, i) => (
-                        <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow-sm mt-4">
+                        <div className="max-w-[318px] bg-white border border-gray-200 rounded-lg shadow-sm mt-4">
                             <a href="#">
                                 <img className="rounded-t-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
                             </a>

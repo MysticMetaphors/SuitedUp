@@ -1,8 +1,12 @@
+import { Link } from "react-router-dom"
+
 export default function ProfileDropdown() {
+
     function toggleProfile() {
         const prof = document.getElementById('dropdownAvatarName')
         prof.classList.toggle('hidden')
     }
+
     return (
         <>
             <div className="relative">
@@ -18,10 +22,10 @@ export default function ProfileDropdown() {
                     </div>
                     <ul className="py-2 text-sm text-gray-700" aria-labelledby="dropdownInformdropdownAvatarNameButtonationButton">
                         <li>
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">Dashboard</a>
+                            <Link to={'/dashboard'} className="block px-4 py-2 hover:bg-gray-100">Dashboard</Link>
                         </li>
                         <li>
-                            <a href="#" className="block px-4 py-2 hover:bg-gray-100">Settings</a>
+                            <Link to={'/profile'} className="block px-4 py-2 hover:bg-gray-100">My Profile</Link>
                         </li>
                         <li>
                             <a href="#" className="block px-4 py-2 hover:bg-gray-100">Cart</a>
