@@ -1,10 +1,12 @@
 import Breadcrumb from "../Components/Breadcrumb";
 import SuitedDropdown from "../Components/SuitedComps/SuitedDropdown";
+import SuitedSidebar from "../Components/SuitedComps/SuitedSidebar";
 
 export default function Shop() {
     return (
         <>
             <div className="w-full h-full px-4 sm:px-6 lg:px-12">
+                <SuitedSidebar />
                 <div className="flex justify-between flex-wrap my-5">
                     <Breadcrumb />
                     <SuitedDropdown setClass="self-end"/>

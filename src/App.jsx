@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
+import 'dompurify'
+
 import DefaultLayout from './Pages/Layout/DefaultLayout';
 import FloatingBg from './Components/FloatingBg';
 import ButtonToTop from './Components/ButtonToTop';
