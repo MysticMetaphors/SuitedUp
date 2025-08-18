@@ -6,7 +6,9 @@ export default function DefaultLayout() {
     return (
         <>
         <Navigation/>
-        <Outlet />
+        <div className="min-h-screen">
+            <Outlet />
+        </div>
         <Footer/>
         </>
     );

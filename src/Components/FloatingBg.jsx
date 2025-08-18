@@ -38,15 +38,15 @@ export default function FloatingBg({
             circle.style.left = `${Math.random() * maxLeft}px`;
             circle.style.top = `${Math.random() * maxTop}px`;
 
-            const maxMoveX = Math.min(containerWidth / 2 - size / 2, 200);
-            const maxMoveY = Math.min(containerHeight / 2 - size / 2, 200);
-            const tx = `${Math.random() * (maxMoveX * 2) - maxMoveX}px`;
-            const ty = `${Math.random() * (maxMoveY * 2) - maxMoveY}px`;
-            circle.style.setProperty("--tx", tx);
-            circle.style.setProperty("--ty", ty);
+            // const maxMoveX = Math.min(containerWidth / 2 - size / 2, 200);
+            // const maxMoveY = Math.min(containerHeight / 2 - size / 2, 200);
+            // const tx = `${Math.random() * (maxMoveX * 2) - maxMoveX}px`;
+            // const ty = `${Math.random() * (maxMoveY * 2) - maxMoveY}px`;
+            // circle.style.setProperty("--tx", tx);
+            // circle.style.setProperty("--ty", ty);
 
-            const duration = `${Math.random() * 10 + 10}s`;
-            circle.style.setProperty("--duration", duration);
+            // const duration = `${Math.random() * 10 + 10}s`;
+            // circle.style.setProperty("--duration", duration);
 
             container.appendChild(circle);
         }
