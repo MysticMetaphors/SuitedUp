@@ -1,3 +1,5 @@
+import SuitedButton from "./SuitedButton";
+
 export default function SuitedSidebar() {
     const colors = [
         { name: "Black", value: "black" },
@@ -17,7 +19,7 @@ export default function SuitedSidebar() {
             <div id="drawer-navigation" className="fixed top-0 left-0 z-40 w-70 h-screen p-4 overflow-y-show transition-transform -translate-x-full bg-white border-primaryYellow-1000 border-r-2" tabindex="-1" aria-labelledby="drawer-navigation-label">
                 <div className="mb-5 flex flex-column gap-5">
                     <img src="./Blue and Black Modern Gradient Software Development Technology Logo (3).png" alt="" className="w-10 h-10" />
-                                            <span className="self-center text-2xl whitespace-nowrap text-primaryYellow-1000 font-bold hidden md:block sm:hidden">SuitedUp</span>
+                    <span className="self-center text-2xl whitespace-nowrap text-primaryYellow-1000 font-bold hidden md:block sm:hidden">SuitedUp</span>
                 </div>
                 <button
                     onClick={toggleSidebar}
@@ -30,8 +32,14 @@ export default function SuitedSidebar() {
                         chevron_right
                     </span>
                 </button>
-
+                <div className="my-4">
+                    <SuitedButton icon={'close'} text={'$500-1000'} size="px-5 py-1" />
+                    <SuitedButton icon={'close'} text={'Buy'} size="px-5 py-1" />
+                    <SuitedButton icon={'close'} text={'Blue'} size="px-5 py-1" />
+                    <SuitedButton icon={'close'} text={'Black'} size="px-5 py-1" />
+                </div>
                 <div className="py-4 overflow-y-auto">
+                    
                     <ul className="space-y-4">
                         <li>
                             <h3 className="px-2 text-sm text-gray-600 tracking-wide">
