@@ -10,6 +10,7 @@ import Shop from './Pages/Shop';
 import Dashboard from './Pages/Dashboard';
 import DashboardLayout from './Pages/Layout/Dashboard';
 import Profile from './Pages/Profile';
+import NotFound from './Pages/Error/404';
 
 export default function App() {
   return (
@@ -20,6 +21,8 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/profile" element={<Profile />} />
+
+          <Route path="*" element={<NotFound />} />
         </Route>
 
         <Route element={<DashboardLayout />}>
