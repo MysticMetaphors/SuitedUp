@@ -13,24 +13,22 @@ Please follow these steps to get started:
    git clone https://github.com/MysticMetaphors/SuitedUp
    cd SuitedUp
 
-# Install dependencies:
+## Install dependencies:
+    `npm install`
 
-npm install
 
+## Run the project locally:
+    `npm run dev`
 
-# Run the project locally:
+## 🛠 Tech Stack
 
-npm run dev
+1. React 19
+2. React Router 7
+3. TailwindCSS 4
+4. Supabase
+5. DOMPurify (for sanitizing HTML)
 
-# 🛠 Tech Stack
-
-React 19
-React Router 7
-TailwindCSS 4
-Supabase
-DOMPurify (for sanitizing HTML)
-
-# 📌 Contribution Workflow
+## 📌 Contribution Workflow
 
 1. Create a new branch:
    ```bash
@@ -45,7 +43,7 @@ DOMPurify (for sanitizing HTML)
     git push origin feature/your-feature-name
 4. Open a Pull Request (PR).
 
-# ✅ Contribution Rules
+## ✅ Contribution Rules
 
 1. Follow the project’s coding style.
 2. Use TailwindCSS for styling.
