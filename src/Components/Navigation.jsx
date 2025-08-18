@@ -86,7 +86,7 @@ export default function Navigation() {
                             <li>
                                 <Link className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300" to={'/shop'}>Ladies</Link>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">Services</a>
                             </li>
                             <li>
@@ -94,7 +94,7 @@ export default function Navigation() {
                             </li>
                             <li>
                                 <a href="#" className="block py-2 px-3 text-primaryGrey-1000 rounded-lg font-semibold hover:text-black hover:bg-gray-300">About</a>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
