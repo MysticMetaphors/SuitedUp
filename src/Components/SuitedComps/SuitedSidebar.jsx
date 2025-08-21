@@ -1,6 +1,18 @@
+import { useEffect, useState } from "react";
 import SuitedButton from "./SuitedButton";
 
+// {data = [], SetFilter, }
 export default function SuitedSidebar() {
+    const [color, setColor] = useState([])
+    const [mode, setMode] = useState([])
+    const [range, setRange] = useState([])
+
+    // useEffect(() => {
+    //     if (color, mode, range) {
+    //          OnFilter()
+    //     }
+    // }, [data, color, mode, range])
+
     const colors = [
         { name: "Black", value: "black" },
         { name: "White", value: "white" },

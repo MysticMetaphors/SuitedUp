@@ -7,7 +7,7 @@ import ButtonToTop from './Components/ButtonToTop';
 
 import Home from './Pages/Home';
 import Shop from './Pages/Shop';
-import Dashboard from './Pages/Dashboard';
+import Dashboard from './Pages/Dashboard/Dashboard';
 import DashboardLayout from './Pages/Layout/Dashboard';
 import Profile from './Pages/Profile';
 import NotFound from './Pages/Error/404';

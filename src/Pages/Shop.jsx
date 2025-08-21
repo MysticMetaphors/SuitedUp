@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
 import Breadcrumb from "../Components/Breadcrumb";
-import SuitedDropdown from "../Components/SuitedComps/SuitedDropdown";
+// import SuitedDropdown from "../Components/SuitedComps/SuitedDropdown";
 import SuitedSidebar from "../Components/SuitedComps/SuitedSidebar";
+// import { supabase } from "../supabaseClient";
 
 export default function Shop() {
+    const data = []
     const [items, setItems] = useState([])
+    const [filteredData, setFilteredData] = useState([])
+
     const tux = [
         {id: 1, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
         {id: 2, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
@@ -28,7 +32,7 @@ export default function Shop() {
                 <SuitedSidebar />
                 <div className="flex justify-between flex-wrap my-5">
                     <Breadcrumb />
-                    <SuitedDropdown setClass="self-end"/>
+                    {/* <SuitedDropdown setClass="self-end"/> */}
                 </div>
                 <div className="flex flex-wrap justify-left gap-4 px-4 sm:px-6 lg:px-12 mb-10">
                     {items.map((item) => (
