@@ -8,9 +8,10 @@ import ButtonToTop from './Components/ButtonToTop';
 import Home from './Pages/Home';
 import Shop from './Pages/Shop';
 import Dashboard from './Pages/Dashboard/Dashboard';
-import DashboardLayout from './Pages/Layout/Dashboard';
+import DashboardLayout from './Pages/Layout/DashboardLayout';
 import Profile from './Pages/Profile';
 import NotFound from './Pages/Error/404';
+import Inventory from './Pages/Dashboard/Inventory';
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
 
         <Route element={<DashboardLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/inventory" element={<Inventory />} />
         </Route>
       </Routes>
     </FloatingBg>

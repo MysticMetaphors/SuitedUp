@@ -47,14 +47,14 @@ export default function Dashboard() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5 mt-5">
                     <DataArea id={'area-1'} type={'area'} series={data}>
-                        <div class="flex justify-between border-gray-200 border-b pb-3">
+                        <div className="flex justify-between border-gray-200 border-b pb-3">
                             <dl>
-                                <dt class="text-base font-normal text-gray-500 pb-1">Profit</dt>
-                                <dd class="leading-none text-3xl font-bold text-gray-900">$5,405</dd>
+                                <dt className="text-base font-normal text-gray-500 pb-1">Profit</dt>
+                                <dd className="leading-none text-3xl font-bold text-gray-900">$5,405</dd>
                             </dl>
                             <div>
-                                <span class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md">
-                                    <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                                <span className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md">
+                                    <svg className="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4" />
                                     </svg>
                                     Profit rate 23.5%
@@ -62,26 +62,26 @@ export default function Dashboard() {
                             </div>
                         </div>
 
-                        <div class="grid grid-cols-2 py-3">
+                        <div className="grid grid-cols-2 py-3">
                             <dl>
-                                <dt class="text-base font-normal text-gray-500 pb-1">Buy</dt>
-                                <dd class="leading-none text-xl font-bold text-green-500">$23,635</dd>
+                                <dt className="text-base font-normal text-gray-500 pb-1">Buy</dt>
+                                <dd className="leading-none text-xl font-bold text-green-500">$23,635</dd>
                             </dl>
                             <dl>
-                                <dt class="text-base font-normal text-gray-500 pb-1">Rent</dt>
-                                <dd class="leading-none text-xl font-bold text-green-500">$18,230</dd>
+                                <dt className="text-base font-normal text-gray-500 pb-1">Rent</dt>
+                                <dd className="leading-none text-xl font-bold text-green-500">$18,230</dd>
                             </dl>
                         </div>
                     </DataArea>
                     <DataPie id={'area-2'} type={'pie'} series={[80, 20]} labels={['Buy', 'Rent']} >
-                        <div class="flex justify-between border-gray-200 border-b pb-3">
+                        <div className="flex justify-between border-gray-200 border-b pb-3">
                             <dl>
-                                <dt class="text-base font-normal text-gray-500 pb-1">Purchase Mode Ratio</dt>
-                                {/* <dd class="leading-none text-3xl font-bold text-gray-900">$5,405</dd> */}
+                                <dt className="text-base font-normal text-gray-500 pb-1">Purchase Mode Ratio</dt>
+                                {/* <dd className="leading-none text-3xl font-bold text-gray-900">$5,405</dd> */}
                             </dl>
                             <div>
-                                <span class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md">
-                                    <svg class="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
+                                <span className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-1 rounded-md">
+                                    <svg className="w-2.5 h-2.5 me-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 14">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13V1m0 0L1 5m4-4 4 4" />
                                     </svg>
                                     Profit rate 23.5%
@@ -94,8 +94,8 @@ export default function Dashboard() {
                 <div className="flex mt-5">
                     <div className="self-start w-full bg-white rounded-lg shadow-sm">
                         <div className="border-gray-200 border-b p-4 md:p-6 ">
-                            {/* <dt class="text-base font-normal text-gray-500 pb-1">Profit</dt> */}
-                            <h1 class="leading-none text-3xl font-bold text-gray-900">Top Selling Products</h1>
+                            {/* <dt className="text-base font-normal text-gray-500 pb-1">Profit</dt> */}
+                            <h1 className="leading-none text-3xl font-bold text-gray-900">Top Selling Products</h1>
                         </div>
                         <table className="w-full text-sm text-left rtl:text-right text-gray-500">
                             <thead className="text-xs text-white bg-primaryYellow-1000 uppercase mb-5">
@@ -105,6 +105,9 @@ export default function Dashboard() {
                                     </th>
                                     <th scope="col" className="px-6 py-3">
                                         Name
+                                    </th>
+                                    <th scope="col" className="px-6 py-3">
+                                        Color
                                     </th>
                                     <th scope="col" className="px-6 py-3">
                                         Buy Price
@@ -126,13 +129,17 @@ export default function Dashboard() {
                                         <td className="px-6 py-4 font-semibold text-gray-900">
                                             {item.title}
                                         </td>
-                                        <td className="px-6 py-4 font-semibold text-gray-900">
+                                        <td className="px-6 py-4 font-semibold text-gray-900 flex items-center">
+                                            <span className="mr-2 w-3 h-3 rounded-full border border-gray-400 bg-black"></span>
+                                            Black
+                                        </td>
+                                        <td className="px-6 py-4 text-green-700">
                                             ${item.buy}
                                         </td>
-                                        <td className="px-6 py-4 font-semibold text-gray-900">
+                                        <td className="px-6 py-4 text-red-700">
                                             ${item.rent}
                                         </td>
-                                        <td className="px-6 py-4 font-semibold text-gray-900">
+                                        <td className="px-6 py-4 text-gray-500">
                                             {item.count}
                                         </td>
                                     </tr>

@@ -1,8 +1,8 @@
-export default function Breadcrumb() {
+export default function Breadcrumb({is_header = true}) {
     return (
         <>
             <div className="px-4 sm:px-6 lg:px-12">
-                <h1
+                {is_header ? <h1
                     className="mb-4 bg-clip-text text-transparent text-3xl md:text-3xl font-extrabold leading-none tracking-tight"
                     style={{
                         backgroundImage:
@@ -10,7 +10,7 @@ export default function Breadcrumb() {
                     }}
                 >
                     Gentelmen's Ware
-                </h1>
+                </h1> : ''}
                 <nav className="flex" aria-label="Breadcrumb">
                     <ol className="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
                         <li className="inline-flex items-center">

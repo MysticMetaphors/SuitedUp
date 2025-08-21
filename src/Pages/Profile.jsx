@@ -139,28 +139,28 @@ export default function Profile() {
                             </table>
                         </div>
                         <nav className="flex items-center flex-column flex-wrap md:flex-row justify-between pt-4" aria-label="Table navigation">
-                            <span className="text-sm font-normal text-gray-500 dark:text-gray-400 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span className="font-semibold text-gray-900">1-10</span> of <span className="font-semibold text-gray-900">1000</span></span>
+                            <span className="text-sm font-normal text-gray-500 mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing <span className="font-semibold text-gray-900">1-10</span> of <span className="font-semibold text-gray-900">1000</span></span>
                             <ul className="inline-flex -space-x-px rtl:space-x-reverse text-sm h-8">
                                 <li>
-                                    <a href="#" className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-white bg-primaryDarkYellow-1000 border border-primaryYellow-1000 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">Previous</a>
+                                    <a href="#" className="flex items-center justify-center px-3 h-8 ms-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700">Previous</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-primaryDarkYellow-1000 bg-white border border-primaryYellow-1000 hover:bg-gray-100 hover:text-gray-700">1</a>
+                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">1</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-primaryDarkYellow-1000 bg-white border border-primaryYellow-1000 hover:bg-gray-100 hover:text-gray-700">2</a>
+                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">2</a>
                                 </li>
                                 <li>
-                                    <a href="#" aria-current="page" className="flex items-center justify-center px-3 h-8 text-blue-600 border border-primaryYellow-1000 bg-blue-50 hover:bg-blue-100 hover:text-blue-700">3</a>
+                                    <a href="#" aria-current="page" className="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700">3</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-primaryDarkYellow-1000 bg-white border border-primaryYellow-1000 hover:bg-gray-100 hover:text-gray-700">4</a>
+                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">4</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-primaryDarkYellow-1000 bg-white border border-primaryYellow-1000 hover:bg-gray-100 hover:text-gray-700">5</a>
+                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700">5</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-white bg-primaryDarkYellow-1000 border border-primaryYellow-1000 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">Next</a>
+                                    <a href="#" className="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700">Next</a>
                                 </li>
                             </ul>
                         </nav>
@@ -177,64 +177,6 @@ export default function Profile() {
                             Order History
                         </h1>
                         <hr className="border border-w-[1px] border-primaryDarkYellow-1000 mb-5" />
-                        {/* <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
-                            <table className="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-                                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                                    <tr>
-                                        <th scope="col" className="px-16 py-3">
-                                            <span className="sr-only">Image</span>
-                                        </th>
-                                        <th scope="col" className="px-6 py-3">
-                                            Product
-                                        </th>
-                                        <th scope="col" className="px-6 py-3">
-                                            Qty
-                                        </th>
-                                        <th scope="col" className="px-6 py-3">
-                                            Price
-                                        </th>
-                                        <th scope="col" className="px-6 py-3">
-                                            Action
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr className="bg-white border-b">
-                                        <td className="p-4">
-                                            <img src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" className="w-16 md:w-32 h-16 md:h-32 max-w-full max-h-full" alt="Apple Watch" />
-                                        </td>
-                                        <td className="px-6 py-4 font-semibold text-gray-900">
-                                            Apple Watch
-                                        </td>
-                                        <td className="px-6 py-4">
-                                            <div className="flex items-center">
-                                                <button className="inline-flex items-center justify-center p-1 me-3 text-sm font-medium h-6 w-6 text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200" type="button">
-                                                    <span className="sr-only">Quantity button</span>
-                                                    <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
-                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h16" />
-                                                    </svg>
-                                                </button>
-                                                <div>
-                                                    <input type="number" id="first_product" className="bg-gray-50 w-14 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block px-2.5 py-1" placeholder="1" required />
-                                                </div>
-                                                <button className="inline-flex items-center justify-center h-6 w-6 p-1 ms-3 text-sm font-medium text-gray-500 bg-white border border-gray-300 rounded-full focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200" type="button">
-                                                    <span className="sr-only">Quantity button</span>
-                                                    <svg className="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16" />
-                                                    </svg>
-                                                </button>
-                                            </div>
-                                        </td>
-                                        <td className="px-6 py-4 font-semibold text-gray-900">
-                                            $599
-                                        </td>
-                                        <td className="px-6 py-4">
-                                            <a href="#" className="font-medium text-red-600">Remove</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div> */}
                     </div>
                 </div>
             </div>
