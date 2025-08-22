@@ -1,4 +1,11 @@
 export default function Inventory() {
+
+    function select_all() {
+        const checkboxes = document.querySelectorAll(".checkable");
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = !checkbox.checked; 
+        });
+    }
     return (
         <>
             <div className="text-black p-4 pb-24 mt-12 h-screen overflow-y-auto overflow-visible">
@@ -10,7 +17,7 @@ export default function Inventory() {
                             <tr>
                                 <th scope="col" className="p-4">
                                     <div className="flex items-center">
-                                        <input id="checkbox-all-search" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
+                                        <input onClick={select_all} id="checkbox-all-search" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
                                         <label for="checkbox-all-search" className="sr-only">checkbox</label>
                                     </div>
                                 </th>
@@ -45,7 +52,7 @@ export default function Inventory() {
                                 <tr className="bg-white border-b border-gray-200 hover:bg-gray-50">
                                     <td className="w-4 p-4">
                                         <div className="flex items-center">
-                                            <input id="checkbox-table-search-1" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600" />
+                                            <input id="checkbox-table-search-1" type="checkbox" className="checkable w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded-sm focus:ring-blue-500 dark:focus:ring-blue-600" />
                                             <label for="checkbox-table-search-1" className="sr-only">checkbox</label>
                                         </div>
                                     </td>
@@ -75,12 +82,12 @@ export default function Inventory() {
                                     </td>
                                     <td className="px-6 py-4 flex gap-2">
                                         <button type="button" className="p-1 flex items-center rounded-lg bg-orange-200 text-orange">
-                                            <span className="material-symbols-rounded" style={{color: 'darkorange'}}>
+                                            <span className="material-symbols-rounded" style={{ color: 'darkorange' }}>
                                                 stylus
                                             </span>
                                         </button>
                                         <button type="button" className="p-1 flex items-center rounded-lg bg-red-200 text-orange">
-                                            <span className="material-symbols-rounded" style={{color: 'red'}}>
+                                            <span className="material-symbols-rounded" style={{ color: 'red' }}>
                                                 delete
                                             </span>
                                         </button>

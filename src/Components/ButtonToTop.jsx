@@ -26,7 +26,7 @@ export default function ButtonToTop() {
     }
 
     return (
-        visible && (<button onClick={toTop} type="button" className="fixed bottom-[20px] right-[20px] cursor-pointer text-white bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 font-medium rounded-full text-sm p-1 text-center">
+        visible && (<button onClick={toTop} type="button" className="fixed z-1000 bottom-[20px] right-[20px] cursor-pointer text-white bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 font-medium rounded-full text-sm p-1 text-center">
             <span class="material-symbols-rounded" style={{ fontSize: '30px' }}>
                 keyboard_arrow_up
             </span>

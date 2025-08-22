@@ -61,73 +61,73 @@ export default function Home() {
                 </div>
 
                 {/* FEATURE BOXES */}
-                <div className="hidden-up mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className=" mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <a
                         href="#"
-                        className="p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up text-gray-700 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
-                                className="material-symbols-rounded text-white"
+                                className="material-symbols-rounded"
                                 style={{ fontSize: '40px' }}
                             >
                                 design_services
                             </span>
-                            <h5 className="text-lg font-bold text-white">Virtual Fitting</h5>
+                            <h5 className="text-lg font-bold">Virtual Fitting</h5>
                         </div>
-                        <p className="mt-2 text-sm text-white">
+                        <p className="mt-2 text-sm">
                             Reduces fitting errors, saves time, and builds confidence for online orders.
                         </p>
                     </a>
                     <a
                         href="#"
-                        className="hidden-up p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up text-gray-700 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
-                                className="material-symbols-rounded text-white"
+                                className="material-symbols-rounded"
                                 style={{ fontSize: '40px' }}
                             >
                                 shopping_bag
                             </span>
-                            <h5 className="text-lg font-bold text-white">Rent Now, Buy Later</h5>
+                            <h5 className="text-lg font-bold">Rent Now, Buy Later</h5>
                         </div>
-                        <p className="mt-2 text-sm text-white">
+                        <p className="mt-2 text-sm">
                             Try before you commit. Apply part of your rental fee toward purchase if you decide to keep it.
                         </p>
                     </a>
                     <a
                         href="#"
-                        className="hidden-up p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up p-6 text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
-                                className="material-symbols-rounded text-white"
+                                className="material-symbols-rounded"
                                 style={{ fontSize: '40px' }}
                             >
                                 {/* local_shipping */}
                                 delivery_truck_speed
-                            </span>
-                            <h5 className="text-lg font-bold text-white">Concierge Delivery & On-Site Fitting</h5>
+                            </span>            
+                            <h5 className="text-lg font-bold">Concierge Delivery & On-Site Fitting</h5>
                         </div>
-                        <p className="mt-2 text-sm text-white">
+                        <p className="mt-2 text-sm">
                             We deliver, adjust on-site, and pick up after your event — no return hassle.
                         </p>
                     </a>
                     <a
                         href="#"
-                        className="hidden-up p-6 bg-gradient-to-r from-primaryYellow-1000 to-primaryDarkYellow-1000 border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
+                        className="hidden-up text-gray-700 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100"
                     >
                         <div className="flex gap-3 items-center">
                             <span
-                                className="material-symbols-rounded text-white"
+                                className="material-symbols-rounded"
                                 style={{ fontSize: '40px' }}
                             >
                                 group_work
                             </span>
-                            <h5 className="text-lg font-bold text-white">Event Group Coordination</h5>
+                            <h5 className="text-lg font-bold">Event Group Coordination</h5>
                         </div>
-                        <p className="mt-2 text-sm text-white">
+                        <p className="mt-2 text-sm">
                             A dedicated stylist manages matching styles, deliveries, and discounts for your whole group.
                         </p>
                     </a>
