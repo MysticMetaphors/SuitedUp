@@ -3,14 +3,12 @@ export default function Inventory() {
     function select_all() {
         const checkboxes = document.querySelectorAll(".checkable");
         checkboxes.forEach(checkbox => {
-            checkbox.checked = !checkbox.checked; 
+            checkbox.checked = !checkbox.checked;
         });
     }
     return (
         <>
             <div className="text-black p-4 pb-24 mt-12 h-screen overflow-y-auto overflow-visible">
-
-
                 <div className="relative overflow-x-auto shadow-md sm:rounded-lg">
                     <table className="w-full text-sm text-left rtl:text-right text-gray-500">
                         <thead className="text-xs text-white uppercase bg-primaryYellow-1000">
@@ -59,9 +57,11 @@ export default function Inventory() {
                                     <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         Business Tuxedo
                                     </th>
-                                    <td className="px-6 py-4 font-semibold text-gray-900 flex items-center">
-                                        <span className="mr-2 w-3 h-3 rounded-full border border-gray-400 bg-black"></span>
-                                        Black
+                                    <td className="px-6 py-4 ">
+                                        <div className="font-semibold text-gray-900 flex items-center">
+                                            <span className="mr-2 w-3 h-3 rounded-full border border-gray-400 bg-black"></span>
+                                            Black
+                                        </div>
                                     </td>
                                     {/* <td className="px-6 py-4">
                                         Laptop

@@ -5,37 +5,32 @@ import SuitedSidebar from "../Components/SuitedComps/SuitedSidebar";
 // import { supabase } from "../supabaseClient";
 
 export default function Shop() {
-    const data = []
-    const [items, setItems] = useState([])
     const [filteredData, setFilteredData] = useState([])
 
     const tux = [
-        {id: 1, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 2, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 3, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 4, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 5, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 6, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 7, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 8, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 9, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 10, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 11, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
-        {id: 12, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299'},
+        {id: 1, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Blue'},
+        {id: 2, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Blue'},
+        {id: 3, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Blue'},
+        {id: 4, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Black'},
+        {id: 5, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Black'},
+        {id: 6, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Black'},
+        {id: 7, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'White'},
+        {id: 8, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'White'},
+        {id: 9, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'White'},
+        {id: 10, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Green'},
+        {id: 11, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Green'},
+        {id: 12, image: 'https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg', title: 'Business Tuxedo', buy: '499', rent: '299', color: 'Green'},
     ]
-    useEffect(() => (
-        setItems(tux)
-    ),[])
     return (
         <>
             <div className="w-full h-full px-4 sm:px-6 lg:px-12">
-                <SuitedSidebar />
+                <SuitedSidebar data={tux} onResults={setFilteredData}/>
                 <div className="flex justify-between flex-wrap my-5">
                     <Breadcrumb />
                     {/* <SuitedDropdown setClass="self-end"/> */}
                 </div>
                 <div className="flex flex-wrap justify-left gap-4 px-4 sm:px-6 lg:px-12 mb-10">
-                    {items.map((item) => (
+                    {filteredData.map((item) => (
                         <div className="max-w-[318px] bg-white border border-gray-200 rounded-lg shadow-sm mt-4 hover:border-primaryYellow-1000">
                             <a href="#">
                                 <img className="rounded-t-lg" src={item.image} alt="" />
